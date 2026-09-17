@@ -1,0 +1,32 @@
+@import "global.css";
+@import "regions/sidebar.css";
+@import "regions/news_list.css";
+@import "regions/gallery.css";
+@import "regions/subregions_list.css";
+@import "regions/map.css";
+@import "regions/list.css";
+
+#region_main {
+    background: var(--custom-color-bg-3);
+}
+
+#region_main .nav-tabs {
+    border-bottom-color: var(--custom-color-border-1); 
+}
+
+#region_main .nav-tabs button.nav-link {
+    border: none;
+    text-transform: uppercase;
+    color: var(--custom-color-font-1);
+    padding: 4px 30px;
+    margin-top: 0;
+    font-size: 0.8em;
+    font-family: 'Montserrat';
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+#region_main .nav-tabs button.nav-link.active {
+    background: var(--custom-color-bg-1);
+
+}

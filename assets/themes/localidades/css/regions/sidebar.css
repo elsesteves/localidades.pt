@@ -1,0 +1,297 @@
+#region-sidebar {
+	border: none;
+	background: var(--custom-color-bg-2);
+
+    max-height: calc(100vh - 140px);
+    display: block;
+    /*overflow: hidden;*/
+    overflow: auto;
+    position: relative;
+}
+
+#region-sidebar::-webkit-scrollbar {
+  height: 6px;
+  width: 8px;
+}
+
+#region-sidebar::-webkit-scrollbar-thumb {
+  background: var(--custom-color-bg-3);
+  border-radius: 4px;
+  opacity: 0.9;
+}
+
+#region-sidebar .card-header {
+	border-bottom: none;
+    padding: 0;
+    /*overflow: hidden;*/
+
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+}
+
+/*
+#region-sidebar .card-body {
+    max-height: calc(100vh - 280px);
+    overflow-y: auto;
+}
+
+#region-sidebar .card-body::-webkit-scrollbar {
+  height: 6px;
+  width: 8px;
+}
+
+#region-sidebar .card-body::-webkit-scrollbar-thumb {
+  background: var(--custom-color-bg-1);
+  border-radius: 4px;
+  opacity: 0.9;
+}
+*/
+
+
+/*Menu*/
+#region-sidebar .nav {
+	margin: 0 calc(var(--bs-card-spacer-x) * -1);
+    font-size: 0.9em;
+}
+
+#region-sidebar .nav-pills .nav-link {
+	border-radius: 0;
+}
+
+#region-sidebar .dropdown-menu {
+	width: calc(100% - 20px);
+    position: relative !important;
+    transform: translate(0px, 0px) !important;
+    margin-left: 20px !important;
+    border-radius: 0;
+    background: inherit;
+    border: none;
+    font-size: 0.95em;
+}
+
+#region-sidebar .dropdown-menu .dropdown-item {
+    color: var(--custom-color-font-1);
+}
+
+#region-sidebar .dropdown-menu .dropdown-item:hover,
+#region-sidebar .dropdown-menu .dropdown-item.active {
+    background: var(--custom-color-bg-1);
+}
+
+#region-sidebar .badge {
+	padding: 6px 18px;
+    text-shadow: none;
+}
+
+
+
+/*Region Banner*/
+
+#region_banner_wrap {
+    width: 100%;
+    position: relative;
+    height: 0;
+    padding-bottom: 30%;
+}
+
+#region_banner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    background-size: 102.5% auto;
+}
+
+#region_banner_wrap .region_name {
+    position: absolute;
+    bottom: 0;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-size: 0.7em;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    padding: 0.9em 1.1em 0.4em;
+    color: var(--custom-color-font-1);
+    background: linear-gradient(2deg, var(--custom-color-bg-2), transparent);
+    width: 100%;
+    font-style: oblique;
+}
+
+
+/*Weather*/
+#weather_widget .title {
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 0.85em;
+}
+
+#weather_widget img {
+    max-width: 100%;
+}
+
+#weather_widget .curr_weatherdata {
+    font-family: 'Montserrat';
+    font-size: 0.80em;
+}
+
+#weather_widget .curr_weatherdata .curr_temp {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#weather_widget .futureday_weatherdata {
+    font-family: 'Montserrat';
+    font-size: 0.80em;
+}
+
+#weather_widget .futureday_title {
+    font-size: 1.05em;
+    text-transform: uppercase;
+}
+
+
+/*Pharmacies*/
+#pharmacies_widget .title {
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 0.85em;
+}
+
+.pharmacy_row img {
+    width: 100%;
+}
+
+.pharmacy_row .pharmacy_txt {
+    font-size: 0.75em;
+    font-family: 'Montserrat';
+}
+
+.pharmacy_row .pharmacy_txt .titulo{
+    display: block;
+    font-size: 1.1em;
+}
+
+
+/* For groupings and such - showing other relevant results */
+#region-sidebar.sidebar-relevant .card-header {
+    padding: 8px 16px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+}
+
+#region-sidebar.sidebar-relevant .accordion-body {
+    padding: 0;
+    background: var(--custom-color-bg-2);
+}
+
+#region-sidebar.sidebar-relevant .relevant_card {
+    position: relative;
+    width: 100%;
+    background: var(--custom-color-bg-2);
+    color: var(--custom-color-font-0);
+    border-bottom: 1px solid var(--custom-color-border-1);
+}
+
+
+#region-sidebar.sidebar-relevant .relevant_card:hover{
+    background: var(--custom-color-bg-3);
+}
+
+#region-sidebar.sidebar-relevant .relevant_card .img_wrap {
+    width: 100%;
+    position: relative;
+}
+
+#region-sidebar.sidebar-relevant .relevant_card .img_wrap.show {
+    height: 0;
+    padding-bottom: 30%;
+}
+
+#region-sidebar.sidebar-relevant .relevant_card .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#region-sidebar.sidebar-relevant .relevant_card .info {
+    /*
+    position: absolute;
+    bottom: 0;
+    */
+}
+
+#region-sidebar.sidebar-relevant .relevant_card .title {    
+    width: 100%;
+    padding: 0.4em 0.6em;
+
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7em;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+
+    color: var(--custom-color-font-1);
+}
+
+#region-sidebar.sidebar-relevant .relevant_card .address {
+    padding: 0.4em 0.6em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7em;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+#region-sidebar.sidebar-relevant .relevant_card .cycles {
+    padding: 0.4em 0.6em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7em;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+#region-sidebar.sidebar-relevant .relevant_card .freguesia {
+    padding: 0.4em 0.6em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.6em;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+
+#region-sidebar.sidebar-relevant .card-body {
+    padding: 8px;
+}
+
+#region-sidebar.sidebar-relevant .accordion-button {
+    padding: 6px 8px;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+}
+
+#region-sidebar.sidebar-relevant .accordion-button.collapsed {
+    background: var(--custom-color-bg-3);
+    color: var(--custom-color-font-1);
+}
+
+#region-sidebar.sidebar-relevant .accordion-item {
+    margin-bottom: 8px;
+    background: var(--custom-color-bg-3);
+}
+
+#region-sidebar.sidebar-relevant .accordion-button::after {
+    background-image: var(--bs-accordion-btn-active-icon);  
+}

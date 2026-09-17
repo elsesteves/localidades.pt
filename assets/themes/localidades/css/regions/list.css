@@ -1,0 +1,68 @@
+.points_list {
+    margin: 0 -0.25em;
+}
+
+.points_list .point_card {
+    position: relative;
+    width: 100%;
+    background: var(--custom-color-bg-2);
+    border-radius: 0.3em;
+}
+
+.points_list .point_card .img_wrap {
+    width: 100%;
+    position: relative;
+}
+
+
+.points_list .point_card .img_wrap.show {
+    height: 0;
+    padding-bottom: 30%;
+}
+
+.points_list .point_card .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.points_list .point_card .info {
+    /*
+    position: absolute;
+    bottom: 0;
+    */
+}
+
+.points_list .point_card .title {    
+    width: 100%;
+    padding: 0.4em 0.6em;
+
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+
+    color: var(--custom-color-font-1);
+    background: linear-gradient(2deg, var(--custom-color-bg-2), transparent);
+}
+
+.points_list .point_card .address,
+.points_list .point_card .cycles {
+    padding: 0.4em 0.6em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7em;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.points_list .point_card .freguesia {
+    padding: 0.4em 0.6em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.6em;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}

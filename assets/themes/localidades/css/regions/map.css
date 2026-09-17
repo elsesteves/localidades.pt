@@ -1,0 +1,20 @@
+#region_map_wrap {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 40%;
+}
+
+#region_map_wrap .map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    #region_map_wrap {
+        padding-bottom: calc(100vh - 200px);
+    }
+}

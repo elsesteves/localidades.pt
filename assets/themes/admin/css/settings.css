@@ -1,0 +1,31 @@
+:root{
+  --color-1: #fff;
+  --color-2: #ccc;
+  --color-3: #313131;
+  --color-4: #2d2d2d;
+  --color-5: #1b66a8;
+  --color-6: #165083;
+  --color-7: #bbb;
+  --color-8: #ddd;
+
+  --color-blocked: #c01313;
+
+  --color-btn-1: #165083;
+  --color-btn-2: #3f51b5;
+  --color-btn-3: #36943a;
+  --color-btn-4: #ff9800;
+  --color-btn-5: #bf3f36;
+  --color-btn-6: #9e9e9e;
+
+  --font-1: "Montserrat";
+  --font-2: "Roboto";
+  --font-3: "Lato";
+  --font-4: "Poppins";
+
+  /*Var que controla a visibilidade dos submenus do menu menu_lateral
+  0 -> escondidos
+  none -> visiveis
+  */
+  --menulat_submenu_visible: none;
+
+}

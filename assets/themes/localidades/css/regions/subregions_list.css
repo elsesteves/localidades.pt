@@ -1,0 +1,46 @@
+.subregions_list {
+    margin: 0 -0.25em;
+}
+
+.subregion_card {
+    position: relative;
+    width: 100%;
+    background: var(--custom-color-bg-2);
+    border-radius: 0.3em;
+}
+
+.subregion_card .img_wrap {
+    width: 100%;
+    position: relative;
+    height: 0;
+    padding-bottom: 30%;
+}
+
+.subregion_card .subregion_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.subregion_card .info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.subregion_card .title {    
+    width: 100%;
+    padding: 0.4em 0.6em;
+
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7em;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+
+    color: var(--custom-color-font-1);
+    background: linear-gradient(2deg, var(--custom-color-bg-2), transparent);
+}
